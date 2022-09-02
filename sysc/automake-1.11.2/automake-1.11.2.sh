@@ -18,7 +18,7 @@ src_configure() {
 }
 
 src_compile() {
-    make MAKEINFO=true
+    AUTOCONF=autoconf-2.64 make MAKEINFO=true
 }
 
 src_install() {
